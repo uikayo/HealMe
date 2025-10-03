@@ -1,0 +1,14 @@
+.logo {
+  width: 1200px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px; /* space for navbar */
+}
