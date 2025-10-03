@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>HealMe</title>
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/temp.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tarot.css') }}">
 </head>
 <body>
-
     <header>
         <div class="navbar">
             <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -26,10 +27,6 @@
             </div>
     </header>
 
-    <section class="hero">
-        <img src="{{ asset('logo.png') }}" alt="HealMe Logo" class="logo">
-    </section>
-
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/nav.js') }}"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Menu Toggle */
 function toggleMenu() {
   const sidebar = document.getElementById("sidebar");
   if (sidebar.style.width === "250px") {

@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
+    <link rel="stylesheet" href="{{ asset('css/temp.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/aboutus.css') }}">
 </head>
 <body>
 
-    <nav>
-        <a href="/aboutus">ABOUT US</a>
-        <a href="/contactus">CONTACT US</a>
-        <a href="/login">LOGIN</a>
-    </nav>
+    <header>
+        <div class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav>
+                <a href="{{ route('aboutus') }}">ABOUT US</a>
+                <a href="{{ route('contactus') }}">CONTACT US</a>
+                <a href="{{ route('login') }}">LOGIN</a>
+            </nav>
+        </div>
+        <div id="sidebar" class="sidebar">
+                <ul class="menu" id="menuList">
+                    <li><a href="{{ route('Open Forum') }}">Open Forum</a></li>
+                    <li><a href="{{ route('Security Analyst') }}">Our Security Analyst</a></li>
+                    <li><a href="{{ route('Psychologist') }}">Our Psychologists</a></li>
+                    <li><a href="{{ route('Tarot') }}">Tarot Reading</a></li>
+                </ul>
+            </div>
+    </header>
 
     <div class="container">
         <p>Hi, Casters!</p>
@@ -39,5 +54,6 @@
         </div>
     </div>
 
+    <script src="{{ asset('js/nav.js') }}"></script>
 </body>
 </html>
