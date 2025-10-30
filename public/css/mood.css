@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== General Page Setup ===== */
+body {
+    background-color: #361F4E; /* warna ungu tua */
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+
+/* ===== Main Container ===== */
+.container1 {
+    border: 3px solid #33195E; 
+    display: inline-block;     /* supaya lebarnya menyesuaikan isi */
+    margin-bottom: 1px;       /* jarak ke bawah */
+    text-align: left;          /* teksnya tetap rata kiri */
+    font-weight: 600;          /* sedikit tebal biar stand out */
+    letter-spacing: 1px; 
+    background-color: #562E69; 
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 40px solid #361F4E;
+    position: relative; 
+    /* width: 100%;
+    max-width: 1110px;
+    background-color: #562E69;
+    margin: 150px auto;
+    border: 3px solid #33195E;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 20px 40px; */
+    
+}
+
+.profile {
+    position: absolute;
+    top: -10px;      /* jarak dari atas */
+    right: -8px;    /* jarak dari kanan */
+    width: 45px;    /* ukuran lingkaran */
+    height: 45px;
+    border-radius: 50%;
+    background-color: #361F4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.profile img {
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ===== Header ===== */
+/* .header {
+    font-weight: bold;
+    color: white; */
+    /* border-bottom: 2px dashed white; */
+    /* padding: 5px 5px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+} */
+
+/* ===== Content ===== */
+.content h2 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #E6E6E6;
+}
+
+/* ===== Emoji Section ===== */
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.emoji-container label {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.emoji-container img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 8px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.emoji-container input {
+    display: none;
+}
+
+/* Saat emoji dipilih */
+.emoji-container input:checked + img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 6px #fff);
+}
+
+/* Hover effect */
+.emoji-container label:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* ===== Text before buttons ===== */
+.share-text {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* ===== Buttons ===== */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    background-color: #9B70FF;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #B495FF;
+    transform: scale(1.05);
+}
+
+/* ===== Footer (Logo) ===== */
+.footer {
+    margin-top: 30px;
+}
+
+.logoUnder {
+    width: 130px;
+    margin-top: 10px;
+    opacity: 0.95;
+    transition: transform 0.2s;
+}
+
+.logoUnder:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    .emoji-container {
+        gap: 20px;
+    }
+
+    .emoji-container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
+
+
+

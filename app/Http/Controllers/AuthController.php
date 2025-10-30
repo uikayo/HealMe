@@ -98,7 +98,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('dashboard'); // Redirect ke halaman setelah login
+            return redirect()->intended('/moodchecker'); // Redirect ke halaman setelah login
         }
 
         return back()->withErrors([

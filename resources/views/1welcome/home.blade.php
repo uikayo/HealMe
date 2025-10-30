@@ -27,7 +27,7 @@
     </header>
 
     <section class="hero">
-        <img src="{{ asset('logo.png') }}" alt="HealMe Logo" class="logo">
+        <img src="{{ asset('assets/logo.png') }}" alt="HealMe Logo" class="logo">
     </section>
 
     <script src="{{ asset('js/script.js') }}"></script>

@@ -23,11 +23,12 @@ Route::get('/contactus', function () {
 })->name('contactus');
 
 
+// dipindahin wildan kebawah
 
 // 4. Mood Checker
-Route::get('/mood checker', function () {
+Route::get('/moodchecker', function () {
     return view('4moodchecker.mood');
-})->name('Mood');
+})->name('mood');
 
 
 
